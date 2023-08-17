@@ -498,7 +498,7 @@ const cDimObj =
     "ride": cNotesNumsObj["11"],
     "crashRight": cNotesNumsObj["b12"], // minor 12th
 }
-// diminished
+// dominant diminished
 const cDomDimObj =
 {
     "kick": cNotesNumsObj["1"],
@@ -578,21 +578,277 @@ const cEnigMajorObj =
     "ride": cNotesNumsObj["b12"], // minor 12th
     "crashRight": cNotesNumsObj["b13"], // minor 13th
 }
-// Ethiopian Major
-const cEthiopianMajorObj =
+// Ethiopian 
+const cEthiopianObj =
 {
-    // "kick": cNotesNumsObj["1"],
-    // "snare": cNotesNumsObj["b2"], // minor 2nd
-    // "highTom": cNotesNumsObj["3"], 
-    // "middleTom": cNotesNumsObj["b5"], // minor 5th
-    // "lowTom": cNotesNumsObj["b6"], // minor 6th
-    // "lowTomRim": cNotesNumsObj["b7"], // minor 7th
-    // "footHighHat": cNotesNumsObj["8"], 
-    // "highHatClosed": cNotesNumsObj["b14"], // minor 14th 
-    // "highHatOpen": cNotesNumsObj["b9"], // minor 9th
-    // "crashLeft": cNotesNumsObj["10"], 
-    // "ride": cNotesNumsObj["b12"], // minor 12th
-    // "crashRight": cNotesNumsObj["b13"], // minor 13th
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"], 
+    "highTom": cNotesNumsObj["b3"], // minor 3rd 
+    "middleTom": cNotesNumsObj["4"], 
+    "lowTom": cNotesNumsObj["5"], 
+    "lowTomRim": cNotesNumsObj["b6"], // minor 6th
+    "footHighHat": cNotesNumsObj["b7"], // minor 7th
+    "highHatClosed": cNotesNumsObj["8"], 
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["b10"], // minor 10th
+    "ride": cNotesNumsObj["11"], 
+    "crashRight": cNotesNumsObj["12"], 
+}
+// Hawaiian
+const cHawaiianObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"], 
+    "highTom": cNotesNumsObj["b3"], // minor 3rd 
+    "middleTom": cNotesNumsObj["4"], 
+    "lowTom": cNotesNumsObj["5"], 
+    "lowTomRim": cNotesNumsObj["6"], 
+    "footHighHat": cNotesNumsObj["b7"], // minor 7th
+    "highHatClosed": cNotesNumsObj["8"], 
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["b10"], // minor 10th
+    "ride": cNotesNumsObj["11"], 
+    "crashRight": cNotesNumsObj["12"], 
+}
+// Hindu
+const cHinduObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"], 
+    "highTom": cNotesNumsObj["3"], 
+    "middleTom": cNotesNumsObj["4"], 
+    "lowTom": cNotesNumsObj["5"], 
+    "lowTomRim": cNotesNumsObj["b6"], // minor 6th
+    "footHighHat": cNotesNumsObj["b7"], // minor 7th
+    "highHatClosed": cNotesNumsObj["8"], 
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["10"], 
+    "ride": cNotesNumsObj["11"], 
+    "crashRight": cNotesNumsObj["12"], 
+}
+// Hirajoshi
+const cHirajoshi =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"], 
+    "highTom": cNotesNumsObj["b3"], // minor 3rd
+    "middleTom": cNotesNumsObj["5"], 
+    "lowTom": cNotesNumsObj["b6"], // minor 6th 
+    "lowTomRim": cNotesNumsObj["8"], 
+    // "footHighHat": cNotesNumsObj["7"], 
+    // "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["b10"], // minor 10th 
+    "ride": cNotesNumsObj["12"], 
+    "crashRight": cNotesNumsObj["b13"], // minor 13th
+}
+// HungarianGypsy
+const cHungarianGypsyObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"], 
+    "highTom": cNotesNumsObj["b3"], // minor 3rd
+    "middleTom": cNotesNumsObj["b5"], // minor 5th 
+    "lowTom": cNotesNumsObj["5"], 
+    "lowTomRim": cNotesNumsObj["b6"], // minor 6th
+    "footHighHat": cNotesNumsObj["7"], 
+    "highHatClosed": cNotesNumsObj["8"], 
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["b10"], // minor 10th
+    "ride": cNotesNumsObj["b12"], // minor 12th
+    "crashRight": cNotesNumsObj["12"], 
+}
+// HungarianMajor
+const cHungarianMajorObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["b3"], // minor 3rd
+    "highTom": cNotesNumsObj["3"], 
+    "middleTom": cNotesNumsObj["b5"], // minor 5th 
+    "lowTom": cNotesNumsObj["5"], 
+    "lowTomRim": cNotesNumsObj["6"], 
+    "footHighHat": cNotesNumsObj["b7"], // minor 7th
+    "highHatClosed": cNotesNumsObj["8"], 
+    "highHatOpen": cNotesNumsObj["b10"], // minor 10th
+    "crashLeft": cNotesNumsObj["10"], 
+    "ride": cNotesNumsObj["b12"], // minor 12th
+    "crashRight": cNotesNumsObj["12"], 
+}
+// Iberian
+const cIberianObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["b2"], // minor 2nd
+    "highTom": cNotesNumsObj["3"], 
+    "middleTom": cNotesNumsObj["4"], 
+    "lowTom": cNotesNumsObj["5"], 
+    "lowTomRim": cNotesNumsObj["b7"], // minor 7th 
+    // "footHighHat": cNotesNumsObj["b7"], // minor 7th
+    "highHatClosed": cNotesNumsObj["8"], 
+    "highHatOpen": cNotesNumsObj["b9"], // minor 9th
+    "crashLeft": cNotesNumsObj["10"], 
+    "ride": cNotesNumsObj["11"], 
+    "crashRight": cNotesNumsObj["12"], 
+}
+// Iwato
+const cIwato =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["b2"], // minor 2nd
+    "highTom": cNotesNumsObj["4"], 
+    "middleTom": cNotesNumsObj["b5"], // minor 5th 
+    "lowTom": cNotesNumsObj["b7"], // minor 7th
+    "lowTomRim": cNotesNumsObj["8"], 
+    // "footHighHat": cNotesNumsObj["7"], 
+    // "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["b9"], // minor 9th
+    "crashLeft": cNotesNumsObj["11"], 
+    "ride": cNotesNumsObj["b12"], // minor 12th
+    "crashRight": cNotesNumsObj["b14"], // minor 14th
+}
+// Japanese
+const cJapanese =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["b2"], // minor 2nd
+    "highTom": cNotesNumsObj["4"], 
+    "middleTom": cNotesNumsObj["5"], 
+    "lowTom": cNotesNumsObj["b7"], // minor 7th
+    "lowTomRim": cNotesNumsObj["8"], 
+    // "footHighHat": cNotesNumsObj["7"], 
+    // "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["b9"], // minor 9th
+    "crashLeft": cNotesNumsObj["11"], 
+    "ride": cNotesNumsObj["12"], 
+    "crashRight": cNotesNumsObj["b14"], // minor 14th
+}
+// Lydian Dominant
+const cLydianDomObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"],
+    "highTom": cNotesNumsObj["3"],
+    "middleTom": cNotesNumsObj["b5"], // sharp 4th or dim 5th
+    "lowTom": cNotesNumsObj["5"],
+    "lowTomRim": cNotesNumsObj["6"],
+    "footHighHat": cNotesNumsObj["b7"], // minor 7th
+    "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["9"],
+    "crashLeft": cNotesNumsObj["10"],
+    "ride": cNotesNumsObj["b12"], // sharp 11th or dim 12th
+    "crashRight": cNotesNumsObj["12"], 
+}
+// Octatonic
+const cOctatonicObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["b2"], // minor 2nd
+    "highTom": cNotesNumsObj["b3"], // minor 3rd
+    "middleTom": cNotesNumsObj["4"], 
+    "lowTom": cNotesNumsObj["5"],
+    "lowTomRim": cNotesNumsObj["6"],
+    "footHighHat": cNotesNumsObj["7"], 
+    "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["b9"], // minor 9th
+    "crashLeft": cNotesNumsObj["b10"], // minor 10th
+    "ride": cNotesNumsObj["11"], 
+    "crashRight": cNotesNumsObj["12"], 
+}
+// Oriental
+const cOrientalObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["b2"], // minor 2nd
+    "highTom": cNotesNumsObj["3"], 
+    "middleTom": cNotesNumsObj["4"], 
+    "lowTom": cNotesNumsObj["b5"], // minor 5th
+    "lowTomRim": cNotesNumsObj["6"],
+    "footHighHat": cNotesNumsObj["b7"], // minor 7th 
+    "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["b9"], // minor 9th
+    "crashLeft": cNotesNumsObj["10"], 
+    "ride": cNotesNumsObj["11"], 
+    "crashRight": cNotesNumsObj["b12"], // minor 12th
+}
+// Prometheus
+const cPrometheusObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"], 
+    "highTom": cNotesNumsObj["3"], 
+    "middleTom": cNotesNumsObj["b5"], // minor 5th 
+    "lowTom": cNotesNumsObj["6"], 
+    "lowTomRim": cNotesNumsObj["b7"], // minor 7th
+    "footHighHat": cNotesNumsObj["b14"], // minor 14th
+    "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["10"], 
+    "ride": cNotesNumsObj["b12"], // minor 12th
+    "crashRight": cNotesNumsObj["13"], 
+}
+// Romanian Minor
+const cRomanianMinorObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"], 
+    "highTom": cNotesNumsObj["b3"], // minor 3rd
+    "middleTom": cNotesNumsObj["b5"], // minor 5th 
+    "lowTom": cNotesNumsObj["5"], 
+    "lowTomRim": cNotesNumsObj["6"], 
+    "footHighHat": cNotesNumsObj["b7"], // minor 7th
+    "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["b10"], // minor 10th
+    "ride": cNotesNumsObj["b12"], // minor 12th
+    "crashRight": cNotesNumsObj["12"], 
+}
+// SpanishGypsy
+const cSpanishGypsyObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["b2"], // minor 2nd 
+    "highTom": cNotesNumsObj["3"], 
+    "middleTom": cNotesNumsObj["4"], 
+    "lowTom": cNotesNumsObj["5"], 
+    "lowTomRim": cNotesNumsObj["b6"], // minor 6th 
+    "footHighHat": cNotesNumsObj["b7"], // minor 7th
+    "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["b9"], // minor 9th
+    "crashLeft": cNotesNumsObj["10"], 
+    "ride": cNotesNumsObj["11"], 
+    "crashRight": cNotesNumsObj["12"], 
+}
+// WholeTones
+const cWholeTonesObj =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"], 
+    "highTom": cNotesNumsObj["3"], 
+    "middleTom": cNotesNumsObj["b5"], // minor 5th
+    "lowTom": cNotesNumsObj["b6"],  // minor 6th
+    "lowTomRim": cNotesNumsObj["b7"], // minor 6th 
+    "footHighHat": cNotesNumsObj["b14"], // minor 14th
+    "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["10"], 
+    "ride": cNotesNumsObj["b12"], // minor 12th
+    "crashRight": cNotesNumsObj["b13"], // minor 13th
+}
+// Yo
+const cYo =
+{
+    "kick": cNotesNumsObj["1"],
+    "snare": cNotesNumsObj["2"],
+    "highTom": cNotesNumsObj["4"], 
+    "middleTom": cNotesNumsObj["5"], 
+    "lowTom": cNotesNumsObj["6"], 
+    "lowTomRim": cNotesNumsObj["8"], 
+    // "footHighHat": cNotesNumsObj["7"], 
+    // "highHatClosed": cNotesNumsObj["8"],
+    "highHatOpen": cNotesNumsObj["9"], 
+    "crashLeft": cNotesNumsObj["11"], 
+    "ride": cNotesNumsObj["12"], 
+    "crashRight": cNotesNumsObj["13"], 
 }
 
 
@@ -623,6 +879,90 @@ function HandleMIDI(event) {
             determineScaleObj = cPhrygianObj
         } else if (whatScale === 'locrian') {
             determineScaleObj = cLocrianObj
+        } else if (whatScale === 'ionian'){
+            determineScaleObj = cIonianObj
+        } else if (whatScale === 'harmMin') {
+            determineScaleObj = cHarmonicMinObj
+        } else if (whatScale === 'melodMin') {
+            determineScaleObj = cMelodicMinObj
+        } else if (whatScale === 'pentMinBlues') {
+            determineScaleObj = cPentBluesMinObj
+        } else if (whatScale === 'pentMajBlues') {
+            determineScaleObj = cPentBluesMajObj
+        } else if (whatScale === 'pentMin') {
+            determineScaleObj = cPentMinObj
+        } else if (whatScale === 'pentMaj') {
+            determineScaleObj = cPentMajObj
+        } else if (whatScale === 'majBebob') {
+            determineScaleObj = cMajBebopObj
+        } else if (whatScale === 'minBebob') {
+            determineScaleObj = cMinBebopObj
+        } else if (whatScale === 'domBebob') {
+            determineScaleObj = cDomBebopObj
+        } else if (whatScale === 'dorBebob') {
+            determineScaleObj = cDorBebopObj
+        } else if (whatScale === 'supLocrian') {
+            determineScaleObj = cSuperLocrianObj
+        } else if (whatScale === '9Tone') {
+            determineScaleObj = c9ToneObj
+        } else if (whatScale === 'algerian') {
+            determineScaleObj = cAlgerianObj
+        } else if (whatScale === 'arabic') {
+            determineScaleObj = cArabicObj
+        } else if (whatScale === 'augmented') {
+            determineScaleObj = cAugmentedObj
+        } else if (whatScale === 'balinese') {
+            determineScaleObj = cBalineseObj
+        } else if (whatScale === 'byzantine') {
+            determineScaleObj = cByzantineObj
+        } else if (whatScale === 'chinese') {
+            determineScaleObj = cChineseObj
+        } else if (whatScale === 'dim') {
+            determineScaleObj = cDimObj
+        } else if (whatScale === 'domDim') {
+            determineScaleObj = cDomDimObj
+        } else if (whatScale === 'egyptian') {
+            determineScaleObj = cEgyptianObj
+        } else if (whatScale === '8Tone') {
+            determineScaleObj = c8ToneObj
+        } else if (whatScale === 'enigMin') {
+            determineScaleObj = cEnigMinorObj
+        } else if (whatScale === 'enigMja') {
+            determineScaleObj = cEnigMajorObj
+        } else if (whatScale === 'ethiopian') {
+            determineScaleObj = cEthiopianObj
+        } else if (whatScale === 'hawaiian') {
+            determineScaleObj = cHawaiianObj
+        } else if (whatScale === 'hindu') {
+            determineScaleObj = cHinduObj
+        } else if (whatScale === 'hirajoshi') {
+            determineScaleObj = cHirajoshi
+        } else if (whatScale === 'hungGypsy') {
+            determineScaleObj = cHungarianGypsyObj
+        } else if (whatScale === 'hungMaj') {
+            determineScaleObj = cHungarianMajorObj
+        } else if (whatScale === 'iberian') {
+            determineScaleObj = cIberianObj
+        } else if (whatScale === 'iwato') {
+            determineScaleObj = cIwato
+        } else if (whatScale === 'japanese') {
+            determineScaleObj = cJapanese
+        } else if (whatScale === 'lydDom') {
+            determineScaleObj = cLydianDomObj
+        } else if (whatScale === 'octa') {
+            determineScaleObj = cOctatonicObj
+        } else if (whatScale === 'oriental') {
+            determineScaleObj = cOrientalObj
+        } else if (whatScale === 'prometheus') {
+            determineScaleObj = cPrometheusObj
+        } else if (whatScale === 'romMin') {
+            determineScaleObj = cRomanianMinorObj
+        } else if (whatScale === 'spanGypsy') {
+            determineScaleObj = cSpanishGypsyObj
+        } else if (whatScale === 'wholeTone') {
+            determineScaleObj = cWholeTonesObj
+        } else if (whatScale === 'yo') {
+            determineScaleObj = cYo
         } else {
             determineScaleObj = cIonianObj
         }
