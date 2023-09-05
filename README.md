@@ -18,5 +18,6 @@ that do not have a MIDI remapping feature. Currently I use this to play a handpa
 - https://www.amplesound.net/en/pro-pd.asp?id=27
 
 **For the future**
+
 Long term I want to turn this into an actual `VST plugin` itself in `C#` code, but for now just adjust the incoming notes to whatever your MIDI device puts in. 
 Adjust the outgoing notes and kit that I created however you want to make it work for you.
