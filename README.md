@@ -1,9 +1,11 @@
 # Alesis DM7 MIDI Remapper
 
 **License**
+
 The source code is public under the MIT License. 
 
 **About**
+
 The recording DAW Logic Pro X allows its users write custom JavaScript code into their MIDI FX to change the behaviour of incoming MIDI notes.
 I wrote this custom-script to use my electronic drum set with a `tongue drum` **VST (Virtual Studio Plugin)**. Now I can use my electronic kit 
 to play any scale I programmed in any key that I want. Customize this however you like for any MIDI capable device within Logic Pro X!
