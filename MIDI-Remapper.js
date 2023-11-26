@@ -859,6 +859,9 @@ let whatScale = 'dorian'
 let whatKey = startingKey["F"]  
 let whatOctave = octaveObj["-1"]
 
+// set to keep track of active notes
+const activeNotes = new Set();
+
 function HandleMIDI(event) {
 
     // find matching notes and change them
@@ -1038,11 +1041,35 @@ function HandleMIDI(event) {
 
         // add octave selection
         event.pitch += whatOctave
+        
+        // adjust velocity (increase by 35%)
+        event.velocity = Math.min(127, Math.round(event.velocity * 1.35));
+        
+        // Add the note to the set of active notes
+        activeNotes.add(event.pitch);
 
         // console.log pitch
         // event.trace();
 
         // send the new changed note
         event.send();
+        
+    } else if (event instanceof NoteOff) {
+        // Check if the released note was previously triggered (is in the activeNotes set)
+        if (activeNotes.has(event.pitch)) {
+        
+        // console.log(activeNotes);
+            
+            // Send a corresponding NoteOff event to stop the note
+            const noteOffEvent = new NoteOff();
+            noteOffEvent.pitch = event.pitch;
+            noteOffEvent.velocity = 64; // You can adjust the velocity if needed
+            
+            // noteOffEvent.trace();
+            noteOffEvent.send();
+
+            // Remove the note from the set of active notes
+            activeNotes.delete(event.pitch);
+        }
     }
   }
